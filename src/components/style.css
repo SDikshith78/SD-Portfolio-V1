@@ -1,0 +1,180 @@
+/* styles.css or in your global CSS file */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-content {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the image */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip-container:hover .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
+  #imagediv{
+    transition: transform linear 0.2s;
+  }
+
+
+  .cursorBlue {
+    position: absolute;
+    width: 80px; /* Set a width */
+    height: 80px; /* Set a height */
+    background-color: rgba(0, 150, 255, 0.6); /* Light blue color */
+    border-radius: 50%; /* Make it a circle */
+    pointer-events: none; /* Ensure it doesn't block interactions */
+    transform: translate(-50%, -50%); /* Center it */
+    z-index: 11; /* Ensure it’s on top */
+  }
+  
+  .cursorLabel {
+    position: absolute;
+    font-size: 14px; /* Set a readable size */
+    color: white;
+    pointer-events: none; /* Ensure it doesn't block interactions */
+    transform: translate(-50%, -50%); /* Center the text */
+    z-index: 12; /* Ensure it’s on top of cursorBlue */
+  }
+  
+
+  /* ---------------------  */
+
+
+
+  body {
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .bg-shape {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.5;
+    filter: blur(90px);
+  }
+  
+  /* Background Colors */
+  .bg-teal {
+    background-color: rgb(255, 72, 173);
+  }
+  
+  .bg-primary {
+    background-color: rgb(30, 0, 255);
+  }
+  
+  .bg-purple {
+    background-color: rgb(140, 0, 215);
+  }
+  
+  /* Positioning the shapes initially at different parts of the screen */
+  .shape1 {
+    top: 20%;
+    left: 50%;
+  }
+  
+  .shape2 {
+    top: 40%;
+    left: 70%;
+  }
+  
+  .shape3 {
+    top: 70%;
+    left: 100%;
+  }
+  
+  /* Keyframes for shape 1 */
+  @keyframes moveShape1 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-200px, 100px); }
+    50% { transform: translate(400px, 200px); }
+    75% { transform: translate(300px, -150px); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  /* Keyframes for shape 2 */
+  @keyframes moveShape2 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(100px, -50px); }
+    50% { transform: translate(300px, 300px); }
+    75% { transform: translate(-200px, -150px); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  /* Keyframes for shape 3 */
+  @keyframes moveShape3 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(150px, 50px); }
+    50% { transform: translate(-400px, -200px); }
+    75% { transform: translate(-300px, 200px); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  /* Animation Classes */
+  .animate-moveShape1 {
+    animation: moveShape1 10s ease-in-out infinite;
+  }
+  
+  .animate-moveShape2 {
+    animation: moveShape2 10s ease-in-out infinite;
+  }
+  
+  .animate-moveShape3 {
+    animation: moveShape3 10s ease-in-out infinite;
+  }
+  
+
+  /* ---------------------------- resume text tag -----------------------  */
+
+.rainbow-text{
+  font-size: 60px; 
+  font-weight: bold;
+  background: url('https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg');
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align:left;
+  position: relative;
+  padding-left: 1em;
+}
+
+/* .bg{
+  
+  background: #D5F5E6;
+} */
+
+.title{
+  font-weight: bold;
+  background: url('https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg');
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.title2{
+  font-weight: bold;
+  background: url('https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg');
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

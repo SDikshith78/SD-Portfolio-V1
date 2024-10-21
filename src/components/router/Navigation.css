@@ -1,0 +1,84 @@
+.menu {
+    max-height: 140vh;
+    width: 500px; /* Fixed width for visibility */
+    background-color: rgb(41, 41, 41);
+    position: fixed; 
+    right: 1; 
+    color: white;
+    z-index: 100; 
+    cursor: pointer;
+  }
+
+  
+  .menu2{
+    position: relative;
+    right: -67vw;
+  }
+
+  .menu.active {
+    transform: translateX(0); /* Move into view when active */
+  }
+  
+  .body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 56px;
+    gap: 11px;
+    margin-top: 21px;
+  }
+  
+  .nav p{
+  position: relative;
+  /* background-color: red; */
+  left: -118px;
+  bottom: -20px;
+  }
+  
+  
+  .header {
+    color: rgb(153, 153, 153);
+    border-bottom: 1px solid rgb(153, 153, 153);
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 15px;
+    display: flex; /* Added */
+    justify-content: center; /* Centering header text */
+    align-items: center; /* Align items vertically */
+    height: 80px;
+    /* background-color: red; */
+  }
+  
+
+  .nav-link:hover{
+    color:rgb(252, 252, 148);
+    /* color:#455CE9; */
+
+  }
+
+
+
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+  }
+
+
+
+
+
+  
+  .nav-link.active {
+    color: #61dafb; /* Active link color */
+  }
+  

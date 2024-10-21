@@ -1,0 +1,61 @@
+.hanger {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+.hanger svg {
+    width: auto;
+    height: 7em;
+}
+
+.hanger p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding-right: 5em;
+    padding-left: var(--gap-padding);
+    line-height: 1.2;
+}
+
+.hanger p span {
+    display: block;
+}
+
+/* ------------------------------------------------------------------------------------ */
+.glitch-text {
+    position: relative;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .glitch-text::before,
+  .glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ff00ff;
+    background: linear-gradient(90deg, transparent, rgba(255, 0, 255, 0.4), transparent);
+    background-size: 100%;
+    animation: glitch-anim 1.5s infinite;
+    clip: rect(0, 0, 0, 0);
+  }
+  
+  .glitch-text::after {
+    color: #00ffff;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.4), transparent);
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes glitch-anim {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, -5px); }
+    50% { transform: translate(5px, 5px); }
+    75% { transform: translate(-5px, 5px); }
+    100% { transform: translate(0, 0); }
+  }
+  
