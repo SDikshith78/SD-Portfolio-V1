@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import  './curve.css';
+import  './Curve.css';
 
 export default function Curve() {
 
