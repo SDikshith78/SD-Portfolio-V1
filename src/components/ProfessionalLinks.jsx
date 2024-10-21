@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./style.css";
-import MouseAnimation from "../utils/mouseAnimation";
+import MouseAnimation from "../utils/MouseAnimation";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
