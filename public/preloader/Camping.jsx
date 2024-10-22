@@ -277,4 +277,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/public/preloader/Camping.glb')
+useGLTF.preload('/preloader/Camping.glb')
