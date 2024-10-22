@@ -12,7 +12,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  const [visibleModel, setVisibleModel] = useState(null); // Initially hide all Cypher models
+  const [visibleModel, setVisibleModel] = useState(null); 
   const containerRef = useRef(); // Reference to the container for scroll-trigger
 
   useEffect(() => {
