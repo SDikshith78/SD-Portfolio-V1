@@ -9,11 +9,33 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: #455CE9;
+  background-color: #000000;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: #455ce9;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Start off-screen at the bottom */
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: #000000; /* Fill color */
+  transition: transform 0.3s ease; /* Smooth transition for the fill */
+  transform: translateY(100%); /* Start off-screen */
+}
+
+.button:hover::before {
+  transform: translateY(0); /* Slide up to fill the button */
 }
 
 .burger {

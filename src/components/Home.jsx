@@ -1,3 +1,4 @@
+import Lenis from 'lenis'
 import Landing from "./Landing";
 import ProjectsShowCase from "./ProjectsShowCase";
 import Skills from "./Skills";
@@ -10,7 +11,7 @@ import Loader from "./Loader";
 import UiButton from "./preloader/UiButton";
 import Resume from "./Resume";
 
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BurgerMenu from "./router/BurgerMenu";
@@ -45,11 +46,13 @@ const Home = () => {
 
   // Ensure ScrollTrigger is set up correctly on page load and refresh
   useLayoutEffect(() => {
+    if (!showLanding) return; // Prevent running when not showing landing
+  
     const sections = document.querySelectorAll("section");
-
+  
     sections.forEach((section, i) => {
       const bgColor = section.getAttribute("data-bg");
-
+  
       ScrollTrigger.create({
         trigger: section,
         start: "top 50%",
@@ -64,25 +67,43 @@ const Home = () => {
         },
         onLeaveBack: () => {
           const prevColor = i === 0 ? "#fff" : sections[i - 1].getAttribute("data-bg");
-          const prevSection = i === 0 ? sections[i].getAttribute("id") : sections[i - 1].getAttribute("id");
           gsap.to("body", {
             backgroundColor: prevColor,
             duration: 1.1,
             ease: "power1.inOut",
           });
-          setCurrentSection(prevSection); // Update current section
         },
       });
     });
-
+  
     // Refresh ScrollTrigger after everything is loaded
     ScrollTrigger.refresh();
-
-    // Clean up on component unmount
+  
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, []);
+  }, [showLanding]); // Add showLanding as a dependency
+  
+
+  useEffect(()=>{
+    // Initialize Lenis
+const lenis = new Lenis();
+
+// Listen for the scroll event and log the event data
+lenis.on('scroll', (e) => {
+  console.log(e);
+});
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+  })
+
 
   return (
     <div>

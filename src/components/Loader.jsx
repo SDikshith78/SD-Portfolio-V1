@@ -19,7 +19,7 @@ const Loader = ({ onFinish }) => {
       setShowVideo(true);
       const videoTimer = setTimeout(() => {
         onFinish(); // Call onFinish to signal Loader completion after video plays
-      }, 3100); // Video duration, adjust as needed
+      }, 3300); // Video duration, adjust as needed
       return () => clearTimeout(videoTimer);
     }
   }, [currentGreeting, onFinish]);

@@ -93,7 +93,7 @@ const ProfessionalLinks = () => {
   
 
   return (
-    <div className="h-full text-white">
+    <div className="h-full text-white ">
       <h1 className="title2 font-neueMontrealbold font-bold text-6xl px-24 py-7 ">
         Professional Links
       </h1>
@@ -147,7 +147,7 @@ const ProfessionalLinks = () => {
             View
           </div>
         </>
-        <div className="font-neueMontrealmedium relative">
+        <div className="font-neueMontrealmedium relative  ">
           {linksArray.map((e, id) => (
             <a 
               href={e.url} 
@@ -155,6 +155,7 @@ const ProfessionalLinks = () => {
               rel="noopener noreferrer" 
               key={id}
             >
+              <div className="hover:text-red-700">
               <MouseAnimation
                 h1={e.name}
                 translate={id * 100}
@@ -163,6 +164,7 @@ const ProfessionalLinks = () => {
                 onMouseEnter={hoverEnter}
                 onMouseLeave={hoverLeave}
               />
+              </div>
             </a>
           ))}
         </div>
