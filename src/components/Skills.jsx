@@ -13,10 +13,10 @@ const Skills = () => {
   ];
 
   const otherImg = [
-    { img: "/public/images/adobe-after-effects.png", title: "After Effects" },
-    { img: "/public/images/adobe-premier.png", title: "Premier Pro" },
-    { img: "/public/images/adobe-photoshop.png", title: "PhotoShop" },
-    { img: "/public/images/blender.png", title: "Blender" },
+    { img: "/images/adobe-after-effects.png", title: "After Effects" },
+    { img: "/images/adobe-premier.png", title: "Premier Pro" },
+    { img: "/images/adobe-photoshop.png", title: "PhotoShop" },
+    { img: "/images/blender.png", title: "Blender" },
   ];
 
   return (

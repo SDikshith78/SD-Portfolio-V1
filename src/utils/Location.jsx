@@ -50,7 +50,7 @@ const Location = () => {
       
       <div >
         <DotLottieReact
-          src="../../public/files/location.json"
+          src="/files/location.json"
           loop
           autoplay
           className="absolute h-[13%] w-[13%] top-[43.5%] left-[8%]"

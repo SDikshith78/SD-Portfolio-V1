@@ -49,7 +49,7 @@ const Footer = () => {
           {showAnimation && (
             <div className="h-[200px] w-[200px] absolute bottom-[50px] right-3 ">
               <DotLottieReact
-                src="../../public/files/smile.json"
+                src="/files/smile.json"
                 loop
                 autoplay
               />

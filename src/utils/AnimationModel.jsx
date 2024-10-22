@@ -1,8 +1,8 @@
 import { Canvas } from "@react-three/fiber";
-import Cypher from "../../public/Cypher";
-import CypherTwo from "../../public/CypherTwo";
-import CypherThree from "../../public/CypherThree";
-import CypherFour from "../../public/CypherFour";
+import Cypher from "/Cypher";
+import CypherTwo from "/CypherTwo";
+import CypherThree from "/CypherThree";
+import CypherFour from "/CypherFour";
 import { OrbitControls } from "@react-three/drei";
 import { Suspense, useEffect, useState } from "react";
 

@@ -80,13 +80,13 @@ const ProjectsShowCase = ({ title, video1, video2, img1, img2, p1, p2, gitrepo1,
 
           {/* Lottie Animation */}
           <DotLottieReact
-            src="/public/files/hideandseek.json"
+            src="/files/hideandseek.json"
             loop
             autoplay
             className="absolute top-[66%] right-[35%] w-[200px] h-[200px] z-10"
           />
           <DotLottieReact
-            src="/public/files/watching.json"
+            src="/files/watching.json"
             loop
             autoplay
             className="absolute top-[16%] -left-[5%] w-[200px] h-[200px] z-10"
@@ -102,14 +102,14 @@ const ProjectsShowCase = ({ title, video1, video2, img1, img2, p1, p2, gitrepo1,
             <div className="flex gap-8 justify-center items-center object-cover">
               <a href={gitrepo1} target="_blank">
                 <img
-                  src="/public/images/githhub_link.png"
+                  src="/images/githhub_link.png"
                   alt="GitHub Link"
                   className="h-[40px] w-[40px] rounded-md "
                 />
               </a>
               <a href={host1} target="_blank">
                 <img
-                  src="/public/images/localhost_link.png"
+                  src="/images/localhost_link.png"
                   alt="Localhost Link"
                   className="h-[40px] w-[40px] rounded-md"
                 />
@@ -183,13 +183,13 @@ const ProjectsShowCase = ({ title, video1, video2, img1, img2, p1, p2, gitrepo1,
             }}
           />
           <DotLottieReact
-            src="/public/files/hideandseek.json"
+            src="/files/hideandseek.json"
             loop
             autoplay
             className="absolute top-[66%] left-[35%] w-[200px] h-[200px] z-10"
           />
           <DotLottieReact
-            src="/public/files/watching.json"
+            src="/files/watching.json"
             loop
             autoplay
             className="absolute top-[16%] -right-[5%] w-[200px] h-[200px] z-10 transform scale-x-[-1]"
@@ -205,14 +205,14 @@ const ProjectsShowCase = ({ title, video1, video2, img1, img2, p1, p2, gitrepo1,
             <div className="flex gap-8 justify-center items-center object-cover">
               <a href={gitrepo2} target="_blank">
                 <img
-                  src="/public/images/githhub_link.png"
+                  src="/images/githhub_link.png"
                   alt="GitHub Link"
                   className="h-[40px] w-[40px] rounded-md "
                 />
               </a>
               <a href={host2} target="_blank">
                 <img
-                  src="/public/images/localhost_link.png"
+                  src="/images/localhost_link.png"
                   alt="Localhost Link"
                   className="h-[40px] w-[40px] rounded-md"
                 />

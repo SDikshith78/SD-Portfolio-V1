@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import Sci from "../../public/about/Sci";
+import Sci from "/about/Sci";
 import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 

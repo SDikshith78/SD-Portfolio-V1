@@ -79,7 +79,7 @@ export default function Landing() {
     <section className="relative h-screen w-screen flex flex-col justify-center items-center overflow-hidden">
       {/* Background Image */}
       <img
-        src="../../public/images/profile.png"
+        src="/images/profile.png"
         alt=""
         className="absolute h-screen w-screen object-contain bg-[#949899]"
       />

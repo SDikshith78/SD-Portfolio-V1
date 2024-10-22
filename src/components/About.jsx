@@ -1,10 +1,10 @@
 import React, { Suspense, useEffect, useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import Cypher from "../../public/Cypher";
-import CypherTwo from "../../public/CypherTwo";
-import CypherThree from "../../public/CypherThree";
-import CypherFour from "../../public/CypherFour";
-import Sci from "../../public/about/Sci";
+import Cypher from "/public/Cypher";
+import CypherTwo from "/public/CypherTwo";
+import CypherThree from "/public/CypherThree";
+import CypherFour from "/public/CypherFour";
+import Sci from "/public/about/Sci";
 import { OrbitControls } from "@react-three/drei";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

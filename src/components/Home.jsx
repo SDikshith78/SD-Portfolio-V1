@@ -117,10 +117,10 @@ const Home = () => {
             <section data-bg="#ffdfaa" id="projects">
               <ProjectsShowCase
                 title="Projects"
-                video1="/public/videos/PokemonVid.mp4"
-                video2="/public/videos/modernPortfolio.mkv"
-                img1="/public/images/pokemonImg.png"
-                img2="/public/images/ModernPortfolio.png"
+                video1="/videos/PokemonVid.mp4"
+                video2="/videos/modernPortfolio.mkv"
+                img1="/images/pokemonImg.png"
+                img2="/images/ModernPortfolio.png"
                 p1="An interactive web app showcasing Pokémon cards with search, filter, and favorite features. Users can log in, like, and save their favorite cards in a personalized collection."
                 p2="A modern web portfolio showcasing dynamic mouse effects, text hover interactions, and more."
                 gitrepo1="https://github.com/SDikshith78/Pokemon-Card-Collection"
@@ -132,10 +132,10 @@ const Home = () => {
 
             <section data-bg="#fabbdd">
               <ProjectsShowCase
-                video1="/public/videos/Netflix.mkv"
-                video2="/public/videos/Figma.mp4"
-                img1="/public/images/Netflix.jpg"
-                img2="/public/images/Figmaimg.png"
+                video1="/videos/Netflix.mkv"
+                video2="/videos/Figma.mp4"
+                img1="/images/Netflix.jpg"
+                img2="/images/Figmaimg.png"
                 p1="A Netflix clone with Firebase for secure accounts, Axios, and React Router."
                 p2="A local grocery case study and its prototype."
                 gitrepo1="https://github.com/SDikshith78/Netflix-India-Clone"

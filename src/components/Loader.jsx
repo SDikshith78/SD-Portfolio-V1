@@ -32,7 +32,7 @@ const Loader = ({ onFinish }) => {
         </div>
       ) : (
         <video autoPlay className="h-screen w-full object-contain bg-black">
-          <source src="/public/videos/preloader.mp4" type="video/mp4" />
+          <source src="/videos/preloader.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       )}
