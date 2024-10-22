@@ -11,9 +11,9 @@ const Resume = () => {
             Explore my  <br /> professional journey
           </p>
         </div>
-      <div className=" w-screen  flex justify-center items-center absolute z-10 pl-[21em] pt-20">
-        <div className="h-[45px] w-[145px] bg-[#D5F5E6] absolute bottom-3 right-[22%]"></div>
-        <div className="h-[550px] w-[550px] flex justify-center items-center cursor-pointer">
+      <div className=" w-screen  flex justify-center items-center absolute z-10 pl-[21em] pt-25">
+        <div className="h-[50px] w-[150px] bg-[#D5F5E6] absolute bottom-3 right-[24.7%]"></div>
+        <div className="h-[560px] w-[550px] flex justify-center items-center cursor-pointer">
           <Spline scene="https://prod.spline.design/NXujUFclYpZwK9-Z/scene.splinecode" />
         </div>
       </div>

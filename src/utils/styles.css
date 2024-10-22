@@ -59,3 +59,19 @@
     100% { transform: translate(0, 0); }
   }
   
+
+  /* Target Microsoft Edge */
+@supports (-ms-ime-align: auto) {
+  .dot-lottie {
+    top: 43.5%;
+    left: 8%;
+  }
+}
+
+/* Target Chrome */
+@supports (-webkit-appearance: none) and (not (-ms-ime-align: auto)) {
+  .dot-lottie {
+    top: 43.5%;
+    left: 6.5%;
+  }
+}

@@ -11,7 +11,7 @@ import {
 } from "framer-motion";
 
 import LocationAnimation from "../utils/Location";
-import ArrowIcon from "../utils/ArrowIcon ";
+import ArrowIcon from "../utils/ArrowIcon";
 
 // Parallax component to handle the infinite scrolling effect
 function ParallaxText({ children, baseVelocity }) {
@@ -79,7 +79,7 @@ export default function Landing() {
     <section className="relative h-screen w-screen flex flex-col justify-center items-center overflow-hidden">
       {/* Background Image */}
       <img
-        src="/images/profile.png"
+        src="../../public/images/profile.png"
         alt=""
         className="absolute h-screen w-screen object-contain bg-[#949899]"
       />

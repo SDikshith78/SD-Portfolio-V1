@@ -1,4 +1,4 @@
-import ArrowIcon from "./ArrowIcon ";
+import ArrowIcon from "./ArrowIcon";
 import "./styles.css";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 const Location = () => {
@@ -53,7 +53,7 @@ const Location = () => {
           src="/files/location.json"
           loop
           autoplay
-          className="absolute h-[13%] w-[13%] top-[43.5%] left-[8%]"
+          className="absolute h-[13%] w-[13%] top-[43.5%] left-[6.5%]" 
         />
       </div>
       <div className="flex justify-center mt-8 relative">
