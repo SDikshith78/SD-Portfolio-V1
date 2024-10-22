@@ -7,7 +7,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/public/preloader/Camping.glb')
+  const { nodes, materials } = useGLTF('/preloader/Camping.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.group330264743.geometry} material={materials.mat17} />
