@@ -102,7 +102,7 @@ function Connect() {
       {submitted && (
         <div className="absolute top-20 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-50"> {/* Use flex for centering */}
           <DotLottieReact
-            src="../../public/files/successEffect.json" // Replace with your actual animation path
+            src="/files/successEffect.json" // Replace with your actual animation path
             loop
             autoplay
             style={{ width: '400px', height: '400px' }} // Set desired size

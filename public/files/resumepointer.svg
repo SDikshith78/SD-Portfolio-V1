@@ -1,32 +1,8 @@
-import Spline from "@splinetool/react-spline";
-import "./style.css";
-
-const Resume = () => {
-  return (
-    <div className="bg h-screen w-screen flex">
-      <div className="flex-1 flex justify-center items-start flex-col pl-10 ">
-        <p className="rainbow-text">
-          Explore my <br /> professional journey
-        </p>
-        
-
-      </div>
-      <div className=" relative -left-[50em] -bottom-[29em] rotate-55">
-
-        <svg
-          fill="#000000"
-          height="100px"
-          width="100px"
-          version="1.1"
-          id="Layer_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 302.816 302.816"
-          xml:space="preserve"
-        >
-          <path
-            id="XMLID_2_"
-            d="M241.053,78.136c0.01-0.224,0.031-0.448,0.03-0.672c0-0.345-0.024-0.686-0.049-1.027
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 302.816 302.816" xml:space="preserve">
+<path id="XMLID_2_" d="M241.053,78.136c0.01-0.224,0.031-0.448,0.03-0.672c0-0.345-0.024-0.686-0.049-1.027
 	c-0.01-0.141-0.01-0.283-0.023-0.424c-0.032-0.322-0.086-0.638-0.138-0.955c-0.027-0.166-0.045-0.332-0.077-0.496
 	c-0.054-0.271-0.127-0.535-0.196-0.801c-0.053-0.21-0.1-0.422-0.162-0.631c-0.064-0.21-0.145-0.414-0.217-0.621
 	c-0.091-0.257-0.176-0.516-0.281-0.769c-0.064-0.157-0.144-0.306-0.213-0.46c-0.133-0.29-0.262-0.581-0.413-0.864
@@ -43,19 +19,5 @@ const Resume = () => {
 	c0.146-0.24,0.296-0.476,0.429-0.725c0.125-0.234,0.232-0.475,0.343-0.713c0.095-0.202,0.195-0.399,0.281-0.606
 	c0.128-0.308,0.233-0.622,0.34-0.936c0.051-0.15,0.11-0.295,0.156-0.448c0.128-0.421,0.231-0.847,0.321-1.275
 	c0.012-0.055,0.03-0.107,0.041-0.163c0.001-0.004,0.001-0.009,0.002-0.013c0.097-0.492,0.171-0.987,0.218-1.484
-	C241.041,78.652,241.041,78.394,241.053,78.136z"
-          />
-        </svg>
-
-        </div>
-      <div className="  w-screen  flex justify-center items-center absolute z-10 pl-[21em] pt-25">
-        <div className="h-[50px] w-[200px] bg-[#D5F5E6] absolute bottom-3 right-[18.5%] "></div>
-        <div className="h-[560px] w-[550px] flex justify-center items-center cursor-pointer">
-          <Spline scene="https://prod.spline.design/NXujUFclYpZwK9-Z/scene.splinecode" />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Resume;
+	C241.041,78.652,241.041,78.394,241.053,78.136z"/>
+</svg>
