@@ -53,7 +53,7 @@ const Location = () => {
           src="/files/location.json"
           loop
           autoplay
-          className="absolute h-[13%] w-[13%] top-[43.5%] left-[6.5%]" 
+          className="absolute h-[13%] w-[13%] top-[43.5%] left-[8%]" 
         />
       </div>
       <div className="flex justify-center mt-8 relative">
