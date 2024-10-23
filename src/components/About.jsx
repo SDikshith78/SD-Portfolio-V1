@@ -24,7 +24,7 @@ const About = () => {
         setVisibleModel(0); // Start showing models when the scroll reaches
         startCypherAnimations();
       },
-      // markers: true, // Optional for debugging, remove later
+      // markers: true, 
     });
 
     return () => {
@@ -36,7 +36,7 @@ const About = () => {
     // Timing for the animations in sequence
     setTimeout(() => setVisibleModel(1), 1490); // Show CypherTwo after 2 seconds
     setTimeout(() => setVisibleModel(2), 3600); // Show CypherThree after 4.3 seconds
-    setTimeout(() => setVisibleModel(3), 5800); // Show CypherFour after 7 seconds
+    setTimeout(() => setVisibleModel(3), 5800); // Show CypherFour after 7 second
   };
 
   return (

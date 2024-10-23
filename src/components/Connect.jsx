@@ -12,7 +12,6 @@ function Connect() {
     const formData = new FormData(event.target);
 
     formData.append("access_key", "8065e020-f3d1-4979-92e0-412b0f18a0e0");
-    console.log(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);  
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -26,17 +25,17 @@ function Connect() {
       body: json,
     }).then((res) => res.json())
     .catch((error) => {
-      console.error("Error:", error);
+      // console.error("Error", error); 
     });
 
     if (res.success) {
-      console.log("Success", res);
+      // console.log("Success", res);
       setSubmitted(true); // Set submitted to true
       formRef.current.reset(); // Clear the form
       // Optionally, hide the animation after a delay (e.g., 3 seconds)
       setTimeout(() => setSubmitted(false), 3000);
     } else {
-      console.log("Error", res);
+      // console.log("Error", res);
     }
   };
 
