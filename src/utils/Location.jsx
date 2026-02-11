@@ -9,7 +9,7 @@ const Location = () => {
 
         <p className="text-white text-left text-[1.3em]">
           <span>Located </span>
-          <span>in the </span>
+          <span>in</span>
           <span>INDIA</span>
         </p>
 
