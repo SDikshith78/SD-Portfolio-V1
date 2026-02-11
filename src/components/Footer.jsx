@@ -44,7 +44,7 @@ const Footer = () => {
           onMouseEnter={() => setShowAnimation(true)}
           onMouseLeave={() => setShowAnimation(false)}
         >
-          <p>Keep Smiling</p>
+          <p>Keep Smiling😜</p>
 
           {showAnimation && (
             <div className="h-[200px] w-[200px] absolute bottom-[50px] right-3 ">
