@@ -1,0 +1,252 @@
+/* ---------------- PANEL ---------------- */
+
+.aboutCard {
+  background: rgba(10, 15, 20, 0.75);
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  border-radius: 18px;
+  padding: 32px;
+  backdrop-filter: blur(12px);
+  position: absolute;
+  overflow: hidden;
+
+  /* neon glow */
+  box-shadow:
+    0 0 20px rgba(34, 211, 238, 0.15),
+    0 0 50px rgba(34, 211, 238, 0.08),
+    inset 0 0 25px rgba(34, 211, 238, 0.05);
+}
+
+/* hologram flicker */
+
+.aboutCard {
+  animation: holoFlicker 6s infinite alternate;
+}
+
+@keyframes holoFlicker {
+  0% {
+    opacity: 0.95;
+  }
+  96% {
+    opacity: 0.95;
+  }
+  97% {
+    opacity: 0.85;
+  }
+  98% {
+    opacity: 0.92;
+  }
+  100% {
+    opacity: 0.95;
+  }
+}
+
+/* ---------------- SWEEP BEAM ---------------- */
+
+.aboutCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(34, 211, 238, 0.35),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: beamSweep 5s infinite;
+}
+
+@keyframes beamSweep {
+  0% {
+    left: -120%;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+/* ---------------- TERMINAL ---------------- */
+
+.terminal {
+  font-family: monospace;
+  font-size: 13px;
+  color: #22d3ee;
+  white-space: pre-line;
+  line-height: 1.6;
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
+}
+
+/* blinking cursor */
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+/* ---------------- PROFILE ---------------- */
+
+.profileImg {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid #22d3ee;
+
+  box-shadow:
+    0 0 8px #22d3ee,
+    0 0 18px rgba(34, 211, 238, 0.6);
+
+  animation: profileFloat 4s ease-in-out infinite;
+}
+
+@keyframes profileFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* ---------------- SCANLINE ---------------- */
+
+.scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(34, 211, 238, 0.08) 50%,
+    transparent 100%
+  );
+
+  background-size: 100% 6px;
+
+  animation: scanMove 8s linear infinite;
+}
+
+@keyframes scanMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 200px;
+  }
+}
+
+/* ---------------- SKILLS ---------------- */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill {
+  padding: 4px 12px;
+  font-size: 11px;
+  border: 1px solid rgba(34, 211, 238, 0.45);
+  border-radius: 20px;
+  color: #67e8f9;
+  cursor: pointer;
+
+  text-shadow: 0 0 6px rgba(34, 211, 238, 0.7);
+
+  transition: all 0.25s ease;
+
+  animation: skillPulse 3s ease-in-out infinite alternate;
+}
+
+.name-color {
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.name-color:hover {
+  color: rgb(249, 249, 75);
+}
+
+.skill:hover {
+  transform: scale(1.12);
+  background-color: rgb(249, 249, 75);
+  color: black;
+  box-shadow:
+    0 0 8px #22d3ee,
+    0 0 18px rgba(34, 211, 238, 0.7);
+}
+
+/* neon pulse */
+
+@keyframes skillPulse {
+  0% {
+    box-shadow: 0 0 4px rgba(34, 211, 238, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 14px rgba(34, 211, 238, 0.65);
+  }
+}
+
+/* ---------------- CYBER GRID ---------------- */
+
+.model_style::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  background:
+    linear-gradient(rgba(34, 211, 238, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.03) 1px, transparent 1px);
+
+  background-size: 60px 60px;
+
+  opacity: 0.35;
+}
+
+
+@media (max-width: 768px){
+
+.model{
+display:none;
+}
+
+.aboutCard{
+position:relative !important;
+margin:auto;
+top:0 !important;
+right:0 !important;
+width:90% !important;
+}
+
+.title{
+position:relative !important;
+left:0 !important;
+text-align:center;
+margin:40px auto;
+}
+
+}

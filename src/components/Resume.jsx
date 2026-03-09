@@ -1,4 +1,4 @@
-import Spline from "@splinetool/react-spline";
+import Spline from '@splinetool/react-spline';
 import "./style.css";
 
 const Resume = () => {
@@ -51,7 +51,7 @@ const Resume = () => {
       <div className="  w-screen  flex justify-center items-center absolute z-10 pl-[21em] pt-25">
         <div className="h-[50px] w-[200px] bg-[#D5F5E6] absolute bottom-3 right-[18.5%] "></div>
         <div className="h-[560px] w-[550px] flex justify-center items-center cursor-pointer">
-          <Spline scene="https://prod.spline.design/NXujUFclYpZwK9-Z/scene.splinecode" />
+              <Spline scene="https://prod.spline.design/i2mGbLHFf5349KIx/scene.splinecode" />
         </div>
       </div>
     </div>
